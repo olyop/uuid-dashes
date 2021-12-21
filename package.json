@@ -1,8 +1,8 @@
 {
-	"types": "dist",
+	"types": "build",
 	"license": "MIT",
 	"version": "1.0.0",
-	"main": "dist/index.js",
+	"main": "build/index.js",
 	"description": "uuid-dashes",
 	"name": "@oly_op/uuid-dashes",
 	"bugs": "https://github.com/olyop/uuid-dashess/issues",
@@ -26,13 +26,20 @@
 		"sync": "git checkout . && git remote update && git pull",
 		"push": "clear && git status && git add -A && git commit -m \"Update\" && git push -u origin master"
 	},
+	"peerDependencies": {
+		"graphql": "16"
+	},
 	"devDependencies": {
-		"@oly_op/eslint-config": "^3.7.7",
-		"@typescript-eslint/eslint-plugin": "^4.24.0",
-		"eslint": "^7.26.0",
-		"eslint-plugin-import": "^2.23.2",
+		"@oly_op/eslint-config": "5.1.6",
+		"@oly_op/tsconfig": "1.0.6",
+		"@typescript-eslint/eslint-plugin": "5.8.0",
+		"@typescript-eslint/parser": "5.8.0",
+		"eslint": "8.5.0",
+		"eslint-config-airbnb": "19.0.2",
+		"eslint-config-airbnb-typescript": "16.1.0",
+		"eslint-plugin-import": "2.25.3",
 		"eslint-plugin-node": "11.1.0",
-		"eslint-plugin-promise": "5.1.0",
-		"typescript": "^4.2.4"
+		"eslint-plugin-promise": "6.0.0",
+		"typescript": "4.5.4"
 	}
 }
